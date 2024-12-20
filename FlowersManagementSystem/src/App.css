@@ -1,0 +1,225 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #eaf0f6;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.App {
+  max-width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+h1, h2 {
+  text-align: center;
+  color: #0056b3;
+  margin: 20px 0;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+  color: #27ae60;
+}
+
+/* Controls Section */
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 15px;
+}
+
+.controls input, .controls select {
+  padding: 12px;
+  font-size: 16px;
+  width: calc(50% - 7.5px);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+.controls input:focus, .controls select:focus {
+  border-color: #0056b3;
+  outline: none;
+}
+
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+button.delete {
+  background-color: #e74c3c;
+  color: white;
+}
+
+button.delete:hover {
+  background-color: #c0392b;
+}
+
+button.edit {
+  background-color: #f39c12;
+  color: white;
+}
+
+button.edit:hover {
+  background-color: #d35400;
+}
+
+button.add-to-cart {
+  background-color: #2ecc71;
+  color: white;
+}
+
+button.add-to-cart:hover {
+  background-color: #27ae60;
+}
+
+
+.flower-list {
+  border-top: 2px solid #ddd;
+  padding-top: 20px;
+}
+
+.flower-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9f9f9;
+  margin: 15px 0;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.flower-card p {
+  margin: 0;
+  flex: 1;
+}
+
+.low-stock {
+  border: 2px solid #e74c3c;
+}
+
+
+.edit-form {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f4f4f9;
+}
+
+.cart {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.cart h2 {
+  color: #0056b3;
+}
+
+.cart h3 {
+  margin-top: 20px;
+  text-align: right;
+}
+
+
+.suggestions {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-height: 150px;
+  overflow-y: auto;
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+}
+
+.suggestions li {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.suggestions li:hover {
+  background-color: #f0f0f0;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  display: block
+}
+
+.form-group input {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 70%;
+}
+
+
+.flower-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.flower-header img {
+  width: 250px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.flower-header h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #0056b3;
+}
+
+button.addflower {
+  display: block; 
+  margin: 10px auto; 
+}
